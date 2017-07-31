@@ -8,6 +8,8 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.4'
+#Use to set configuration variables
+gem 'figaro'
 #Use flickraw to access flickr api
 gem 'flickraw'
 # Use sqlite3 as the database for Active Record
