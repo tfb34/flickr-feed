@@ -3,5 +3,7 @@ class StaticPagesController < ApplicationController
 		@flickr_id = params[:flickr_id]
 	end
 
+	def about
+	end
 	
 end
