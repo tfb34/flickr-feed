@@ -2,8 +2,8 @@
 
 module FlickrHelper  
   def user_photos(user_id, photo_count = 12)
-    FlickRaw.api_key = ENV["API_KEY"]
-    FlickRaw.shared_secret = ENV["SHARED_SECRET"]
+    FlickRaw.api_key = Figaro.env.api_key
+    FlickRaw.shared_secret = Figaro.env.shared_secret
 
     flickr.photos.search(:user_id => user_id).to_a.values_at(0..photo_count-1)
   end
